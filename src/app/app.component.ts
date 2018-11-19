@@ -17,11 +17,10 @@ export class AppComponent {
   // tslint:disable-next-line:use-life-cycle-interface
   ngOnInit() {
     this.getUsers();
-    console.log(this.users);
   }
 
   getUsers(): void {
    this.userService.getUsers()
-    .subscribe(users => this.users = users);
+    .subscribe((users) => { this.users = users ; console.log (this.users); });
   }
 }

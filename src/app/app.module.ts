@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatFormFieldModule } from '@angular/material';
-import { MatNativeDateModule, MatDatepickerModule, MatInputModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatGridListModule } from '@angular/material';
+import { MatNativeDateModule, MatDatepickerModule } from '@angular/material';
 
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -22,11 +22,10 @@ import { UserService } from './services/user.service';
     HttpClientModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatButtonModule,
-    MatCheckboxModule,
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
+    MatGridListModule,
     NgbModule.forRoot()
   ],
   providers: [UserService, MatDatepickerModule ],

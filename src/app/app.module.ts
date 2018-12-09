@@ -4,18 +4,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule, MatInputModule, MatGridListModule } from '@angular/material';
 import { MatNativeDateModule, MatDatepickerModule } from '@angular/material';
-
+import { MatTableModule } from '@angular/material';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { DatepickerComponent } from './components/datepicker/datepicker.component';
 import { UserService } from './services/user.service';
+import { UsertableComponent } from './components/usertable/usertable.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    UsertableComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,7 @@ import { UserService } from './services/user.service';
     MatFormFieldModule,
     MatNativeDateModule,
     MatGridListModule,
+    MatTableModule,
     NgbModule.forRoot()
   ],
   providers: [UserService, MatDatepickerModule ],

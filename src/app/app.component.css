@@ -1,3 +1,7 @@
 mat-grid-tile {
     background: lightblue;
   }
+
+jumbotron-border-radius {
+  border-radius : 0rem !important;
+}

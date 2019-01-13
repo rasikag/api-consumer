@@ -11,7 +11,8 @@ import { User } from 'src/app/models/user.model';
 export class UsertableComponent implements OnInit {
 
   users: User[];
-  dataSource;
+  dataSource = null;
+  isLoading = true;
   displayedColumns: string[] = ['id', 'email', 'name', 'phone'];
 
   constructor(private userService: UserService) { }
@@ -22,9 +23,12 @@ export class UsertableComponent implements OnInit {
 
   getUsers(): void {
     this.userService.getUsers()
-     .subscribe((users) => {
-       this.dataSource = users ;
-      });
-   }
+      .subscribe((users) => {
+        this.isLoading = false;
+        this.dataSource = users;
+      },
+        error => this.isLoading = false
+      );
+  }
 
 }

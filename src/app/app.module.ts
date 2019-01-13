@@ -2,11 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatFormFieldModule, MatInputModule, MatGridListModule } from '@angular/material';
+import { MatFormFieldModule } from '@angular/material';
+import { MatInputModule} from '@angular/material';
+import { MatGridListModule } from '@angular/material';
 import { MatNativeDateModule, MatDatepickerModule } from '@angular/material';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
+import { MatPaginator } from '@angular/material';
+import { MatSort} from '@angular/material';
 
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';

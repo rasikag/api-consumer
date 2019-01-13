@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { User } from 'src/app/models/user.model';
+import { MatPaginator } from '@angular/material';
 
 @Component({
   selector: 'app-usertable',
@@ -15,14 +15,16 @@ export class UsertableComponent implements OnInit {
   isLoading = true;
   displayedColumns: string[] = ['id', 'email', 'name', 'phone'];
 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.getUsers();
+    this.getUsers(0, 3);
   }
 
-  getUsers(): void {
-    this.userService.getUsers()
+  getUsers(start: number, limit: number): void {
+    this.userService.getUsers(start, limit)
       .subscribe((users) => {
         this.isLoading = false;
         this.dataSource = users;

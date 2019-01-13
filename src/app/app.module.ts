@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule, MatInputModule, MatGridListModule } from '@angular/material';
 import { MatNativeDateModule, MatDatepickerModule } from '@angular/material';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -29,6 +30,7 @@ import { UsertableComponent } from './components/usertable/usertable.component';
     MatNativeDateModule,
     MatGridListModule,
     MatTableModule,
+    MatProgressSpinnerModule,
     NgbModule.forRoot()
   ],
   providers: [UserService, MatDatepickerModule ],

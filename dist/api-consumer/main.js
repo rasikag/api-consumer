@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-grid-tile {\n    background: lightblue;\n  }"
+module.exports = "mat-grid-tile {\n    background: lightblue;\n  }\n\njumbotron-border-radius {\n  border-radius : 0rem !important;\n}"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "mat-grid-tile {\n    background: lightblue;\n  }"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-usertable></app-usertable>"
+module.exports = "<div class=\"container\">\n    <nav class=\"navbar navbar-expand-md navbar-dark bg-dark mb-4\">\n        <a class=\"navbar-brand\" href=\"#\">ng App</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n            aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n            <ul class=\"navbar-nav mr-auto\">\n                <li class=\"nav-item active\">\n                    <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">Link</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n                </li>\n            </ul>\n            <form class=\"form-inline mt-2 mt-md-0\">\n                <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\n                <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\n            </form>\n        </div>\n    </nav>\n</div>\n<div class=\"container\">\n    <div class=\"jumbotron jumbotron-border-radius\">\n        <h1>Navbar example</h1>\n        <p class=\"lead\">This example is a quick exercise to illustrate how\n            the top-aligned navbar works. As you scroll,\n            this navbar remains in its original position and moves with\n            the rest of the page.</p>\n    </div>\n</div>\n<div class=\"container\">\n    <app-usertable></app-usertable>\n</div>"
 
 /***/ }),
 
@@ -79,7 +79,7 @@ var AppComponent = /** @class */ (function () {
     };
     AppComponent.prototype.getUsers = function () {
         var _this = this;
-        this.userService.getUsers()
+        this.userService.getUsers(0, 10)
             .subscribe(function (users) { _this.users = users; console.log(_this.users); });
     };
     AppComponent = __decorate([
@@ -113,11 +113,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/progress-spinner */ "./node_modules/@angular/material/esm5/progress-spinner.es5.js");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _components_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/datepicker/datepicker.component */ "./src/app/components/datepicker/datepicker.component.ts");
-/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/user.service */ "./src/app/services/user.service.ts");
-/* harmony import */ var _components_usertable_usertable_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/usertable/usertable.component */ "./src/app/components/usertable/usertable.component.ts");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _components_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/datepicker/datepicker.component */ "./src/app/components/datepicker/datepicker.component.ts");
+/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _components_usertable_usertable_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/usertable/usertable.component */ "./src/app/components/usertable/usertable.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -137,15 +138,18 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
-                _components_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_8__["DatepickerComponent"],
-                _components_usertable_usertable_component__WEBPACK_IMPORTED_MODULE_10__["UsertableComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+                _components_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_9__["DatepickerComponent"],
+                _components_usertable_usertable_component__WEBPACK_IMPORTED_MODULE_11__["UsertableComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -158,10 +162,11 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatGridListModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatTableModule"],
                 _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_5__["MatProgressSpinnerModule"],
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbModule"].forRoot()
+                _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_7__["NgbModule"].forRoot()
             ],
-            providers: [_services_user_service__WEBPACK_IMPORTED_MODULE_9__["UserService"], _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDatepickerModule"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
+            providers: [_services_user_service__WEBPACK_IMPORTED_MODULE_10__["UserService"], _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDatepickerModule"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -234,7 +239,7 @@ module.exports = "table {\n    width: 100%;\n  }"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\">\n    <ng-container matColumnDef=\"id\">\n      <th mat-header-cell *matHeaderCellDef> ID </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.id}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"email\">\n      <th mat-header-cell *matHeaderCellDef> EMAIL </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> NAME </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"phone\">\n      <th mat-header-cell *matHeaderCellDef> PHONE </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.phone}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n  </table>\n\n  <mat-progress-spinner></mat-progress-spinner>\n</div>"
+module.exports = "<div>\n  <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\">\n    <ng-container matColumnDef=\"id\">\n      <th mat-header-cell *matHeaderCellDef> ID </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.id}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"email\">\n      <th mat-header-cell *matHeaderCellDef> EMAIL </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> NAME </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"phone\">\n      <th mat-header-cell *matHeaderCellDef> PHONE </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.phone}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n  </table>\n  <mat-paginator [length]=\"resultsLength\" [pageSize]=\"30\"></mat-paginator>\n</div>\n<mat-card *ngIf=\"isLoading\" style=\"display: flex; justify-content: center; align-items: center\">\n  <mat-progress-spinner color=\"primary\" mode=\"indeterminate\">\n  </mat-progress-spinner>\n</mat-card>"
 
 /***/ }),
 
@@ -250,6 +255,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UsertableComponent", function() { return UsertableComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -261,21 +267,29 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var UsertableComponent = /** @class */ (function () {
     function UsertableComponent(userService) {
         this.userService = userService;
+        this.dataSource = null;
+        this.isLoading = true;
         this.displayedColumns = ['id', 'email', 'name', 'phone'];
     }
     UsertableComponent.prototype.ngOnInit = function () {
-        this.getUsers();
+        this.getUsers(0, 3);
     };
-    UsertableComponent.prototype.getUsers = function () {
+    UsertableComponent.prototype.getUsers = function (start, limit) {
         var _this = this;
-        this.userService.getUsers()
+        this.userService.getUsers(start, limit)
             .subscribe(function (users) {
+            _this.isLoading = false;
             _this.dataSource = users;
-        });
+        }, function (error) { return _this.isLoading = false; });
     };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"]),
+        __metadata("design:type", _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"])
+    ], UsertableComponent.prototype, "paginator", void 0);
     UsertableComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-usertable',
@@ -319,12 +333,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var UserService = /** @class */ (function () {
     function UserService(http) {
         this.http = http;
+        // http://jsonplaceholder.typicode.com/posts?_start=10&_limit=10
         this.baseURL = 'https://jsonplaceholder.typicode.com/';
-        this.getAllUsers = 'https://jsonplaceholder.typicode.com/users';
     }
-    UserService.prototype.getUsers = function () {
-        return this.http.get(this.getAllUsers)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["delay"])(500));
+    UserService.prototype.getUsers = function (start, limit) {
+        var getAllUsers = "https://jsonplaceholder.typicode.com/users?_start=" + start + "&_limit=" + limit;
+        return this.http.get(getAllUsers)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["delay"])(5000));
     };
     UserService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),

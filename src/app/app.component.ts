@@ -20,7 +20,7 @@ export class AppComponent {
   }
 
   getUsers(): void {
-   this.userService.getUsers()
+   this.userService.getUsers(0, 10)
     .subscribe((users) => { this.users = users ; console.log (this.users); });
   }
 }

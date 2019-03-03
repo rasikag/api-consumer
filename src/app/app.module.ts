@@ -9,8 +9,7 @@ import { MatNativeDateModule, MatDatepickerModule } from '@angular/material';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
-import { MatPaginator } from '@angular/material';
-import { MatSort} from '@angular/material';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -38,6 +37,7 @@ import { UsertableComponent } from './components/usertable/usertable.component';
     MatTableModule,
     MatProgressSpinnerModule,
     MatCardModule,
+    MatPaginatorModule,
     NgbModule.forRoot()
   ],
   providers: [UserService, MatDatepickerModule ],

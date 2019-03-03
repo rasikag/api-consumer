@@ -1,4 +1,4 @@
-<div>
+<div class="mat-elevation-z8">
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef> ID </th>
@@ -26,9 +26,9 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-  <mat-paginator [length]="resultsLength" [pageSize]="30"></mat-paginator>
+  <mat-card *ngIf="isLoading" style="display: flex; justify-content: center; align-items: center">
+    <mat-progress-spinner color="primary" mode="indeterminate">
+    </mat-progress-spinner>
+  </mat-card>
+  <mat-paginator [length]="resultsLength" [pageSize]="4" showFirstLastButtons></mat-paginator>
 </div>
-<mat-card *ngIf="isLoading" style="display: flex; justify-content: center; align-items: center">
-  <mat-progress-spinner color="primary" mode="indeterminate">
-  </mat-progress-spinner>
-</mat-card>

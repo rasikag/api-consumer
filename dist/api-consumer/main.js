@@ -41,7 +41,7 @@ module.exports = "mat-grid-tile {\n    background: lightblue;\n  }\n\njumbotron-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <nav class=\"navbar navbar-expand-md navbar-dark bg-dark mb-4\">\n        <a class=\"navbar-brand\" href=\"#\">ng App</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n            aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n            <ul class=\"navbar-nav mr-auto\">\n                <li class=\"nav-item active\">\n                    <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">Link</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n                </li>\n            </ul>\n            <form class=\"form-inline mt-2 mt-md-0\">\n                <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\n                <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\n            </form>\n        </div>\n    </nav>\n</div>\n<div class=\"container\">\n    <div class=\"jumbotron jumbotron-border-radius\">\n        <h1>Navbar example</h1>\n        <p class=\"lead\">This example is a quick exercise to illustrate how\n            the top-aligned navbar works. As you scroll,\n            this navbar remains in its original position and moves with\n            the rest of the page.</p>\n    </div>\n</div>\n<div class=\"container\">\n    <app-usertable></app-usertable>\n</div>"
+module.exports = "<div class=\"container\">\n    <nav class=\"navbar navbar-expand-md navbar-dark bg-dark mb-4\">\n        <a class=\"navbar-brand\" href=\"#\">ng App Examples</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n            aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n            <ul class=\"navbar-nav mr-auto\">\n                <li class=\"nav-item active\">\n                    <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">My App</a>\n                </li>\n            </ul>\n            <form class=\"form-inline mt-2 mt-md-0\">\n                <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\n                <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\n            </form>\n        </div>\n    </nav>\n</div>\n<div class=\"container\">\n    <div class=\"jumbotron jumbotron-border-radius\">\n        <h1>Project Summary</h1>\n        <p class=\"lead\">This application is developed by Rasika Gayan Gunarathna</p>\n        <p class=\"lead\">These components are developed using Angular 6.</p>\n    </div>\n</div>\n<div class=\"container\">\n    <app-usertable></app-usertable>\n</div>"
 
 /***/ }),
 
@@ -114,11 +114,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/progress-spinner */ "./node_modules/@angular/material/esm5/progress-spinner.es5.js");
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _components_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/datepicker/datepicker.component */ "./src/app/components/datepicker/datepicker.component.ts");
-/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/user.service */ "./src/app/services/user.service.ts");
-/* harmony import */ var _components_usertable_usertable_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/usertable/usertable.component */ "./src/app/components/usertable/usertable.component.ts");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _components_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/datepicker/datepicker.component */ "./src/app/components/datepicker/datepicker.component.ts");
+/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _components_usertable_usertable_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/usertable/usertable.component */ "./src/app/components/usertable/usertable.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -141,15 +142,16 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
-                _components_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_9__["DatepickerComponent"],
-                _components_usertable_usertable_component__WEBPACK_IMPORTED_MODULE_11__["UsertableComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"],
+                _components_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_10__["DatepickerComponent"],
+                _components_usertable_usertable_component__WEBPACK_IMPORTED_MODULE_12__["UsertableComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -163,10 +165,11 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatTableModule"],
                 _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_5__["MatProgressSpinnerModule"],
                 _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardModule"],
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_7__["NgbModule"].forRoot()
+                _angular_material_paginator__WEBPACK_IMPORTED_MODULE_7__["MatPaginatorModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbModule"].forRoot()
             ],
-            providers: [_services_user_service__WEBPACK_IMPORTED_MODULE_10__["UserService"], _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDatepickerModule"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
+            providers: [_services_user_service__WEBPACK_IMPORTED_MODULE_11__["UserService"], _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDatepickerModule"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -239,7 +242,7 @@ module.exports = "table {\n    width: 100%;\n  }"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\">\n    <ng-container matColumnDef=\"id\">\n      <th mat-header-cell *matHeaderCellDef> ID </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.id}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"email\">\n      <th mat-header-cell *matHeaderCellDef> EMAIL </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> NAME </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"phone\">\n      <th mat-header-cell *matHeaderCellDef> PHONE </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.phone}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n  </table>\n  <mat-paginator [length]=\"resultsLength\" [pageSize]=\"30\"></mat-paginator>\n</div>\n<mat-card *ngIf=\"isLoading\" style=\"display: flex; justify-content: center; align-items: center\">\n  <mat-progress-spinner color=\"primary\" mode=\"indeterminate\">\n  </mat-progress-spinner>\n</mat-card>"
+module.exports = "<div class=\"mat-elevation-z8\">\n  <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\">\n    <ng-container matColumnDef=\"id\">\n      <th mat-header-cell *matHeaderCellDef> ID </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.id}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"email\">\n      <th mat-header-cell *matHeaderCellDef> EMAIL </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> NAME </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"phone\">\n      <th mat-header-cell *matHeaderCellDef> PHONE </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.phone}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n  </table>\n  <mat-card *ngIf=\"isLoading\" style=\"display: flex; justify-content: center; align-items: center\">\n    <mat-progress-spinner color=\"primary\" mode=\"indeterminate\">\n    </mat-progress-spinner>\n  </mat-card>\n  <mat-paginator [length]=\"resultsLength\" [pageSize]=\"4\" showFirstLastButtons></mat-paginator>\n</div>\n"
 
 /***/ }),
 
@@ -256,6 +259,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/user.service */ "./src/app/services/user.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -268,23 +273,41 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
 var UsertableComponent = /** @class */ (function () {
     function UsertableComponent(userService) {
         this.userService = userService;
         this.dataSource = null;
         this.isLoading = true;
         this.displayedColumns = ['id', 'email', 'name', 'phone'];
+        this.resultsLength = 10;
+        this.start = 0;
     }
-    UsertableComponent.prototype.ngOnInit = function () {
-        this.getUsers(0, 3);
+    UsertableComponent.prototype.ngAfterViewInit = function () {
+        this.getUsers();
     };
-    UsertableComponent.prototype.getUsers = function (start, limit) {
+    UsertableComponent.prototype.getUsers = function () {
         var _this = this;
-        this.userService.getUsers(start, limit)
-            .subscribe(function (users) {
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["merge"])(this.paginator.page)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["startWith"])({}), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["switchMap"])(function () {
+            return _this.userService.getUsers(_this.start, 4);
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (data) {
+            // Flip flag to show that loading has finished.
             _this.isLoading = false;
-            _this.dataSource = users;
-        }, function (error) { return _this.isLoading = false; });
+            return data;
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function () {
+            _this.isLoading = false;
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])([]);
+        })).subscribe(function (data) {
+            _this.dataSource = data;
+            if (_this.start === 0) {
+                _this.start = _this.paginator.pageIndex + 2;
+            }
+            else {
+                _this.start = _this.paginator.pageIndex + 1;
+            }
+        });
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"]),

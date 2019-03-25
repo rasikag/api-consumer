@@ -15,14 +15,12 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { DatepickerComponent } from './components/datepicker/datepicker.component';
 import { UserService } from './services/user.service';
 import { UsertableComponent } from './components/usertable/usertable.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DatepickerComponent,
     UsertableComponent
   ],
   imports: [

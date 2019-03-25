@@ -46,12 +46,10 @@ export class UsertableComponent implements AfterViewInit {
         })
       ).subscribe(data => {
         this.dataSource = data;
-        if (this.start === 0) {
-          this.start = this.paginator.pageIndex + 2;
-        } else {
-          this.start = this.paginator.pageIndex + 1;
-        }
+        // 0, 1, 2
+        // 10
+        // 1
+        this.start = this.paginator.pageIndex * 4;
       });
   }
-
 }
